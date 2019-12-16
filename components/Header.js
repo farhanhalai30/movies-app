@@ -3,7 +3,8 @@ const Header = props => {
     e.preventDefault();
     const searchKw = document.getElementById("search-kw").value.trim();
 
-    if (searchKw != "") window.location.href = "/search?q=" + searchKw;
+    if (searchKw != "")
+      window.location.href = "/search?q=" + searchKw.replace(/\s/g, "-");
   };
 
   return (
@@ -18,7 +19,11 @@ const Header = props => {
             id="search-kw"
             className="input-box"
             placeholder="Search for your favourite Movies, TV Shows, etc."
-            defaultValue={props.query && props.query.q ? props.query.q : ""}
+            defaultValue={
+              props.query && props.query.q
+                ? props.query.q.replace(/-/g, " ")
+                : ""
+            }
           />
           <input
             type="submit"

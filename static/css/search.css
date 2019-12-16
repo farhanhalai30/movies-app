@@ -15,7 +15,6 @@
   margin-bottom: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  transition: all ease-in-out 0.2s;
 }
 .search-card:nth-child(2n + 1) {
   margin-right: 30px;
