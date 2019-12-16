@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+input {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.single-line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.header {
+  padding: 20px 0 35px;
+  text-align: center;
+}
+.header .logo-text {
+  font-size: 26px;
+  margin: 5px 0 15px;
+}
+.header .search-form {
+  position: relative;
+}
+.header .input-box {
+  width: 100%;
+  padding: 10px 44px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.header .submit-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 0px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.header .submit-btn:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1130px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+  .header {
+    padding: 10px 0 25px;
+  }
+  .header .logo-text {
+    font-size: 22px;
+    margin: 5px 0 8px;
+  }
+}

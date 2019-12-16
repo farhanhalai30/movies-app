@@ -1,0 +1,75 @@
+.query-results {
+  margin-bottom: 20px;
+}
+
+.search-list {
+  clear: both;
+  overflow: hidden;
+}
+.search-card {
+  float: left;
+  width: calc(50% - 15px);
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 130px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+.search-card:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+.search-card .poster-img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: calc(100% - 30px);
+  background-size: cover;
+  background-position: center;
+}
+.search-card .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.search-card .type {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.search-card:hover {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px 0 30px;
+}
+.pagination li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+}
+.pagination li a:hover {
+  text-decoration: underline;
+}
+.pagination li.disabled a {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.pagination li.active {
+  color: #f67280;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .search-card {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .search-card:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+}
